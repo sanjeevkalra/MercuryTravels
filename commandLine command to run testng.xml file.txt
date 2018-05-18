@@ -1,0 +1,7 @@
+qatechhub.com/continuous-delivery-integration-deployment/
+
+
+Ref of below execution of testng.xml from command prompt is : https://www.youtube.com/watch?v=PAHYkZPd-8w&list=PLdQPNqPAvI0z1lKw_ZwNOULGvi8nt90kp&index=24
+i.e. qatechhub -> session 21 - Selenium Frameworks Part - 4 -> from 1:00:00 onwards
+
+java -cp "<path of lib folder\*>";"<path of class files>\" org.testng.TestNG testng.xml

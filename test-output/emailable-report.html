@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">MercuryTravel</th></tr>
+<tr><td><a href="#t0">Flights</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">329,838</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MercuryTravel</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Flights &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.test.hotels.HotelsTest</td><td><a href="#m0">selectResultFilters</a></td><td rowspan="1">1526667398380</td><td rowspan="1">33439</td></tr><tr><th colspan="4">Flights &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.selenium.test.hotels.HotelsTest</td><td><a href="#m1">searchHotels</a></td><td rowspan="1">1526667213433</td><td rowspan="1">128730</td></tr></tbody>
+</table>
+<h2>Flights</h2><h3 id="m0">com.selenium.test.hotels.HotelsTest#selectResultFilters</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">setting url to : https://www.mercurytravels.co.in/hotels/results<br/><BR> Selecting Hotel Star Rating as '4'</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //label[@class=&apos;star-label&apos;]/span[@text()=&apos;4&apos;]/..
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;VAIO&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6964, moz:profile: C:\Users\sony\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7e570c30-1eb5-4b55-a1e4-afa3c21fa415
+*** Element info: {Using=xpath, value=//label[@class=&apos;star-label&apos;]/span[@text()=&apos;4&apos;]/..}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.selenium.pageobject.hotels.HotelsResultsPage.clickFourStar(HotelsResultsPage.java:23)
+	at com.selenium.test.hotels.HotelsTest.selectResultFilters(HotelsTest.java:59)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.selenium.test.hotels.HotelsTest#searchHotels</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><BR>Clear text box [[FirefoxDriver: firefox on XP (4fe748b7-faa6-446e-a7e0-bc261198a825)] -> id: cityName]<br/><BR>Enter text 'Delhi, India' in text box [[FirefoxDriver: firefox on XP (4fe748b7-faa6-446e-a7e0-bc261198a825)] -> id: cityName]<br/><BR>Select '1' from locator [[FirefoxDriver: firefox on XP (4fe748b7-faa6-446e-a7e0-bc261198a825)] -> id: room_count]<br/><BR>Select '1' from locator [[FirefoxDriver: firefox on XP (4fe748b7-faa6-446e-a7e0-bc261198a825)] -> id: adult_count_1]<br/><BR>Select '0' from locator [[FirefoxDriver: firefox on XP (4fe748b7-faa6-446e-a7e0-bc261198a825)] -> id: slect-room1ChildAge child_count_1]<br/><BR>Clicking button [[FirefoxDriver: firefox on XP (4fe748b7-faa6-446e-a7e0-bc261198a825)] -> id: searchHotelsBtn]<br/>Hotels Result page is displayed Sucessfully<br/>Get CurrentUrl : https://www.mercurytravels.co.in/hotels/results<br/>Scrolling Price Left Slider by 100<br/>Scrolling Price Left Slider by 200</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
