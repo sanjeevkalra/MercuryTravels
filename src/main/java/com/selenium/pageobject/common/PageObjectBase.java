@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
 import com.selenium.pageobject.flights.FlightsPage;
-import com.selenium.pageobject.home.HomePage;
+//import com.selenium.pageobject.home.HomePage;
 import com.selenium.pageobject.hotels.HotelsPage;
-import com.selenium.test.flights.FlightsTest;
+//import com.selenium.test.flights.FlightsTest;
 
 public abstract class PageObjectBase {
 	@FindBy(linkText="Indian Holidays")
